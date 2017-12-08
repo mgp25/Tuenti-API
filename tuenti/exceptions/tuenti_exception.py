@@ -1,0 +1,2 @@
+class TuentiException(Exception):
+    pass
