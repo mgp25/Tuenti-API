@@ -9,7 +9,7 @@ class Constants:
     VERSION = "msngr-3"
 
     # Device related constants
-    OS_VERSION = "11.1.2"
+    OS_VERSION = "11.4"
     DEVICE_NAME = "iPhone"
     OS = "iOS"
     MODEL = "iPhone9,3"
@@ -20,7 +20,7 @@ class Constants:
     DEVICE_FAMILY = "MDI3MDFmZjU4MGExNWM0YmEyYjA5MzRkODlmMjg0MTU6MC4wMDk1NzUwMCAxMzI0NDg5Njgx"
 
     # Headers
-    USER_AGENT = "Tuenti/9.8.2 (iPhone; iOS 11.1.2; Scale/2.00)"
+    USER_AGENT = "Tuenti/9.16.1 (iPhone; iOS 11.4; Scale/2.00)"
     ACCEPT_LANGUAGE = "es-ES;q=1"
     CONTENT_TYPE = "application/json"
     ACCEPT_ENCODING = "Accept-Encoding: gzip"
