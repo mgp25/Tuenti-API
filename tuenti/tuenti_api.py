@@ -84,6 +84,26 @@ class TuentiAPI:
 
         return self.http.send_request(url, self.http.encapsulate_request(requests))
 
+    def getBalance(self):
+        """ Get account balance.
+
+        Return:
+            List/Dict.
+        """
+        url = Constants.TUENTI_URL
+        requests = [
+                        [
+                            "AccountDashboard_getAccountDashboard",
+                            {
+                                "forceUpdate": False,
+                                "fragments":
+                                    ["balance","unbilledConsumption","overallConsumption","subscriptionBundles","tariff","operations","billing","upgrades","tariffName","previousUsageSection","devicePlan"]
+                            }
+                        ],
+                    ]
+
+        return self.http.send_request(url, self.http.encapsulate_request(requests))
+
     def get_sync_info(self):
         """ Get contact sync information and settings.
 
