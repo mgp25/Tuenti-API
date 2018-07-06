@@ -65,7 +65,7 @@ class HttpInterface:
                 self.authToken = sessionHeader[1].replace("auth-token=", "")
             Utils.save_session(self.tuenti, sessionToken, self.authToken)
 
-        return response.json
+        return response.json()
 
     def get_headers(self, url):
         """ Get headers.
